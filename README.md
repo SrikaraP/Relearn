@@ -77,4 +77,7 @@ To build the operating system for education.
 
 ## An insider Look Into the Project
 
-
+![Image 0](Assets/IMG.jpg)
+![Image 1](Assets/IMG1.jpg)
+![Image 2](Assets/IMG2.jpg)
+![Image 3](Assets/IMG3.jpg)
