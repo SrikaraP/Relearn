@@ -20,7 +20,7 @@ Relearn uses AI to simplify learning, automate workflows, and provide personaliz
 
 ### For Institutions
 
-* Scanning Tool
+* Exan Paper Scanning Tool
 * Secure File Transfers
 * Student File Tracking
 * Student Progress Tracking
