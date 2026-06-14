@@ -18,6 +18,13 @@ Relearn uses AI to simplify learning, automate workflows, and provide personaliz
 
 ## Key Features
 
+### For Institutions
+
+* Scanning Tool
+* Secure File Transfers
+* Student File Tracking
+* Student Progress Tracking
+
 ### For Students
 
 * Personalized learning roadmaps
