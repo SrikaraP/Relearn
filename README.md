@@ -81,7 +81,8 @@ To build the operating system for education.
 ![Image 1](Assets/IMG1.jpg)
 ![Image 2](Assets/IMG2.jpg)
 ![Image 3](Assets/IMG3.jpg)
-<img width="651" height="561" alt="Screenshot 2026-06-14 at 5 23 35 PM" src="https://github.com/user-attachments/assets/9f64a6d8-0af2-434b-98ad-02800e837f66" />
 <img width="636" height="518" alt="Screenshot 2026-06-14 at 9 21 51 PM" src="https://github.com/user-attachments/assets/1f9ba340-baee-4bf6-861a-dd231067cd3c" />
+<img width="1088" height="1050" alt="image" src="https://github.com/user-attachments/assets/e0a83745-880f-4663-8407-074508308623" />
+
 
 
