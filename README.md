@@ -1,16 +1,80 @@
-# React + Vite
+# Relearn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### The AI-Powered Education OS
 
-Currently, two official plugins are available:
+Relearn is an AI-powered platform that brings students, teachers, and parents into one connected learning ecosystem.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Instead of juggling multiple apps for studying, assignments, communication, and progress tracking, Relearn combines everything into a single intelligent platform.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Why Relearn?
 
-## Expanding the ESLint configuration
+Education is fragmented.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Students struggle to stay organized, teachers spend hours on repetitive tasks, and parents often lack visibility into academic progress.
+
+Relearn uses AI to simplify learning, automate workflows, and provide personalized insights for everyone involved.
+
+---
+
+## Key Features
+
+### For Students
+
+* Personalized learning roadmaps
+* AI study assistant
+* Smart summaries, flashcards, and quizzes
+* Progress tracking and goal setting
+
+### For Teachers
+
+* Question paper and answer sheet analysis
+* Performance insights and learning-gap detection
+* Automated feedback generation
+* Classroom management tools
+
+### For Parents
+
+* Real-time academic visibility
+* Progress monitoring
+* Personalized learning recommendations
+
+---
+
+## ReLens
+
+### ReLens Lite
+
+A student-focused scanner that converts notes and worksheets into:
+
+* Summaries
+* Flashcards
+* Quizzes
+* Revision resources
+
+### ReLens Edu
+
+A teacher-focused scanner that analyzes:
+
+* Question papers
+* Answer sheets
+* Student performance
+* Common mistakes and learning gaps
+
+---
+
+## Tech Stack
+
+* React
+* TypeScript
+* Vite
+* Google Gemini
+* OCR & Multimodal AI
+* Custom PCB Scanner Hardware
+
+---
+
+## Vision
+
+To build the operating system for education.
