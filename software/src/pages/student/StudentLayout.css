@@ -1,0 +1,104 @@
+.student-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  min-height: calc(100vh - 100px);
+}
+
+@media (max-width: 900px) {
+  .student-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.student-main-content {
+  flex: 1;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+.student-main-content.coach-active {
+  padding: 0;
+  overflow: hidden;
+}
+
+.student-sidebar {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+  border-radius: 24px;
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+.profile-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info p {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sidebar-nav-clean {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-family: 'Outfit', sans-serif;
+}
+
+.nav-btn:hover {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transform: translateX(4px);
+}
+
+.nav-btn.active {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.student-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0; /* Prevents flex blowout */
+}

@@ -1,0 +1,137 @@
+.ai-coach-workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom { border-bottom: 1px solid var(--border-color); }
+.border-top { border-top: 1px solid var(--border-color); }
+
+.glass-panel-no-border {
+  background: var(--bg-secondary);
+  backdrop-filter: blur(16px);
+}
+
+.avatar-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-primary-light { background: rgba(59, 130, 246, 0.1); }
+
+.coach-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem !important;
+}
+
+.message-bubble-wrapper {
+  display: flex;
+  gap: 1rem;
+  max-width: 85%;
+}
+
+.user-wrapper {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.coach-wrapper {
+  align-self: flex-start;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+}
+
+.bg-primary { background: var(--accent-primary); }
+.bg-secondary { background: var(--text-secondary); }
+
+.message-bubble {
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  line-height: 1.6;
+}
+
+.user-bubble {
+  background: var(--accent-primary);
+  color: white;
+  border-top-right-radius: 4px;
+}
+
+.coach-bubble {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top-left-radius: 4px;
+  color: var(--text-primary);
+}
+
+.coach-input-area {
+  background: var(--bg-secondary);
+}
+
+.chat-input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border-radius: 24px;
+  font-size: 1.05rem;
+}
+
+/* Override CustomMarkdown for chat */
+.coach-bubble .markdown-body h1,
+.coach-bubble .markdown-body h2,
+.coach-bubble .markdown-body h3 {
+  margin-top: 1rem;
+}
+.coach-bubble .markdown-body {
+  font-size: 1rem;
+}
+
+/* Custom styles for input area */
+.coach-prompt-chip {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.coach-prompt-chip:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.coach-chat-input {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.coach-chat-input:focus {
+  background: var(--bg-secondary) !important;
+  border-color: var(--accent-primary) !important;
+}

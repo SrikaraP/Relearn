@@ -1,0 +1,47 @@
+.parent-layout {
+  display: flex;
+  height: calc(100vh - 80px); /* Account for top navbar */
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.parent-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.parent-main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+/* Hide scrollbar for clean look */
+.parent-main-content::-webkit-scrollbar {
+  display: none;
+}
+.parent-main-content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Parent specific overrides to look calmer */
+.parent-layout .dashboard-card {
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.parent-layout .card-header {
+  margin-bottom: 1.5rem;
+}
+
+.parent-layout .card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

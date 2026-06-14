@@ -1,0 +1,116 @@
+.assessment-analyzer {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.upload-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-zone {
+  flex-grow: 1;
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  background: var(--bg-secondary);
+}
+
+.upload-zone:hover {
+  border-color: var(--accent-primary);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.upload-zone.has-file {
+  border-color: var(--success);
+  border-style: solid;
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.upload-zone input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-zone label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.upload-zone label p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.report-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.printable-report-wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* Print Media Query */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .hide-on-print {
+    display: none !important;
+  }
+
+  .printable-report-wrapper, .printable-report-wrapper * {
+    visibility: visible;
+  }
+
+  .printable-report-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    background: white;
+    color: black;
+  }
+
+  /* Force background colors to print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

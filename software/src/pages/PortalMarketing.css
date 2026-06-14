@@ -1,0 +1,70 @@
+.portal-marketing {
+  padding: 4rem 1rem;
+}
+
+.portal-header {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.text-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portal-title {
+  font-size: clamp(3rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.portal-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.portal-feature-card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.portal-feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  margin-bottom: 1.5rem;
+}
+
+.portal-feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.portal-feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

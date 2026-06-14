@@ -1,0 +1,122 @@
+.planning-tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+.skill-tree-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .skill-tree-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tree-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tree-column h3 {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 0.5rem;
+}
+
+.skill-node {
+  padding: 1.5rem;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.node-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.skill-node h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.skill-node p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Active Node Styling */
+.node-active {
+  border: 2px solid var(--accent-primary);
+  background: rgba(59, 130, 246, 0.02);
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+  border: none;
+}
+.btn-success:hover {
+  background: #0ea5e9; /* slightly different shade or keep success hover */
+}
+
+/* Locked Node Styling */
+.node-locked {
+  border: 1px dashed var(--border-color);
+  background: var(--bg-primary);
+  opacity: 0.8;
+}
+
+.dependency-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--warning);
+  font-weight: 600;
+}
+
+/* Completed Node Styling */
+.node-completed {
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.node-completed h4, .node-completed p {
+  opacity: 0.6;
+}
+
+.completed-stamp {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--success);
+  opacity: 0.2;
+}
+
+.w-100 { width: 100%; }
+.mt-2 { margin-top: 0.5rem; }
