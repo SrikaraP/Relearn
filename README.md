@@ -6,7 +6,6 @@ Relearn is an AI-powered platform that brings students, teachers, and parents in
 
 Instead of juggling multiple apps for studying, assignments, communication, and progress tracking, Relearn combines everything into a single intelligent platform.
 
----
 
 ## Why Relearn?
 
@@ -16,7 +15,6 @@ Students struggle to stay organized, teachers spend hours on repetitive tasks, a
 
 Relearn uses AI to simplify learning, automate workflows, and provide personalized insights for everyone involved.
 
----
 
 ## Key Features
 
@@ -40,7 +38,6 @@ Relearn uses AI to simplify learning, automate workflows, and provide personaliz
 * Progress monitoring
 * Personalized learning recommendations
 
----
 
 ## ReLens
 
@@ -62,7 +59,6 @@ A teacher-focused scanner that analyzes:
 * Student performance
 * Common mistakes and learning gaps
 
----
 
 ## Tech Stack
 
@@ -73,8 +69,11 @@ A teacher-focused scanner that analyzes:
 * OCR & Multimodal AI
 * Custom PCB Scanner Hardware
 
----
 
 ## Vision
 
 To build the operating system for education.
+
+## An insider Look Into the Project
+
+
